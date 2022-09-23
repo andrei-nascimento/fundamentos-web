@@ -21,7 +21,7 @@ p {
 }
 
 h1, h2, h3, a, nav p {
-    color: ;
+    color: var(--purple);
     letter-spacing: 3px;
 }
 
