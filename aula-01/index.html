@@ -5,39 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contato.html">Contato</a></li>
-    </ul>
+    <nav>
+        <p>Apresentação Pessoal</p>
+        <ul>
+            <li><a href="/aula-01/index.html">Home</a></li>
+            <li><a href="/aula-01/contato.html">Contato</a></li>
+        </ul>
+    </nav>
 
-    <h1>Sobre o Andrei</h1>
-
-    <p>Olá! Me chamo Andrei, tenho 23 anos e moro atualmente em São Paulo capital.</p>
-
-    <p>Desde pequeno sempre me interessei pelo campo da arte e da música. Comecei a tocar guitarra ainda criança, passava horas praticando assim que chegava da escola. No começo era complicado pois as pontas dos meus dedos ardiam já que as cordas da guitarra eram de aço.</p>
-        
-    <p>Mas, creio que todo esse esforço ajudou a moldar a forma com que penso hoje. Não há nada que eu não consiga fazer se eu tiver tempo e dedicação.</p>
-        
-    <p>
-    Em relação aos meus estudos acadêmicos, possuo dois diplomas técnicos, um na área de Eletrônica e outro em Multimídia, esse, a qual acabei me identificando bastante por conta dos estudos relacionados a área de criação utilizando ferramentas como photoshop, illustrator, premiere entre outros. Acompanhei também neste mesmo curso técnico o uso da lógica de programação, desenvolvimento de sites e aplicativos. (Nessa época, mal sabia eu que hoje estaria utilizando todos esses conhecimentos juntos).
-    </p>
-          
-    <p>Eu me graduei em Marketing pela Fatec Sebrae em 2020, e foi neste local que ao longo de quatro anos pude abrir meus horizontes para o mercado como um todo e iniciar minha trajetória de carreira. Pude desenvolver habilidades de planejamento, networking, escopo de projetos, administração de empresas e estratégias de vendas para determinado público ou nicho.</p>
-        
-    <p>Já tive minha própria agência de marketing, onde fazia criação de conteúdo, campanhas de marketing digital, design e etc.</p>
-        
-    <p>Já atuei também em uma startup de tecnologia com foco em machine learning, onde desenvolvia além de ações de marketing para a empresa, todo o Spec técnico da aplicação, ou seja, toda lógica/o caminho que o usuário passa pelo algoritmo até retornar um resultado. Esse spec era passado aos desenvolvedores para aí sim, entrar em funcionamento.</p>
-        
-    <p>Atualmente participo do bootcamp Java fullstack da Generation. 
-    Aprendi programação orientada a objetos, banco de dados, e no último módulo, veremos a parte de frontend com React e outras tecnologias. Apesar do bootcamp ser intenso e desafiador, é muito gratificante realizar os projetos e, claro, conhecer pessoas novas.</p>
-
-    <img src="assets/img/Nara.jpg" alt="Foto de Perfil">
-
-    <h2>Meu vídeo predileto:</h2>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/aMYFuRJtcHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+    <main>
+        <section>
+            <h1>Sobre o Andrei</h1>
+            <hr />
+            <div class="perfil">
+                <article>
+                    <p class="primeiro">
+                        Olá! Me chamo Andrei, tenho 23 anos e moro atualmente em São Paulo capital. Desde pequeno sempre me interessei pelo campo da arte e da música. Comecei a tocar guitarra ainda criança, passava horas praticando assim que chegava da escola. No começo era complicado pois as pontas dos meus dedos ardiam já que as cordas da guitarra eram de aço. Mas, creio que todo esse esforço ajudou a moldar a forma com que penso hoje. Não há nada que eu não consiga fazer se eu tiver tempo e dedicação.
+                    </p>    
+                    <p class="segundo">
+                        Em relação aos meus estudos acadêmicos, possuo dois diplomas técnicos, um na área de Eletrônica e outro em Multimídia, esse, a qual acabei me identificando bastante por conta dos estudos relacionados a área de criação utilizando ferramentas como photoshop, illustrator, premiere entre outros. Acompanhei também neste mesmo curso técnico o uso da lógica de programação, desenvolvimento de sites e aplicativos. (Nessa época, mal sabia eu que hoje estaria utilizando todos esses conhecimentos juntos).
+                    </p>    
+                    <p class="terceiro">
+                        Eu me graduei em Marketing pela Fatec Sebrae em 2020, e foi neste local que ao longo de quatro anos pude abrir meus horizontes para o mercado como um todo e iniciar minha trajetória de carreira. Pude desenvolver habilidades de planejamento, networking, escopo de projetos, administração de empresas e estratégias de vendas para determinado público ou nicho. Já tive minha própria agência de marketing, onde fazia criação de conteúdo, campanhas de marketing digital, design e etc.
+                    </p>    
+                </article>
+                <img src="assets/img/Nara.png" alt="Foto de Perfil" class="foto">
+            </div>
+        </section>
+        <hr />
+        <section>
+            <h2>Meu vídeo favorito</h2>
+            <iframe
+                class="video"
+                src="https://www.youtube.com/embed/aMYFuRJtcHs"
+                title="Bones"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>Feito por: Andrei Nascimento - 2022 &copy;</p>
+    </footer>
 </body>
 </html>
