@@ -1,10 +1,3 @@
-:root {
-    --bg-background: #FAFCE0;
-    --purple: #4A314D;
-    --purple-disabled: #6B6570;
-    --dark-purple: #1A090D;
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -21,8 +14,8 @@ p {
 }
 
 h1, h2, h3, a, nav p {
-    color: var(--purple);
-    letter-spacing: 3px;
+    color: grey;
+    letter-spacing: 1px;
 }
 
 h1, h2, h3 {
@@ -30,7 +23,9 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
+    color: grey;
+    margin-bottom: 1.5rem;
 }
 
 h2 {
@@ -40,6 +35,11 @@ h2 {
 h3 {
     font-size: 1.5rem;
     margin-bottom: 2rem;
+}
+
+.titulo {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 nav {
@@ -63,12 +63,12 @@ li {
 
 a {
     text-decoration: none; /*Retira o sublinhado que fica no link*/
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: text-shadow .2s ease-in-out;
 }
 
 a:hover {
-    text-shadow: 0 0 2px var(--purple);
+    text-shadow: 0 0 2px grey;
   }
 
 hr {
@@ -86,7 +86,6 @@ main {
   
 footer {
     padding: 2rem 0;
-    border-top: 2px solid var(--purple);
     margin-top: 2rem;
     display: flex;
     justify-content: center;
@@ -106,7 +105,7 @@ footer {
 
 .foto {
     height: 400px;
-    aspect-ratio: 1;
+    width: 1;
 }
 
 .video {
@@ -125,7 +124,7 @@ footer {
 }
 
 .endereco {
-    color: var(--dark-purple);
+    color: grey;
     font-size: 1.250rem;
 }
 
@@ -133,11 +132,15 @@ footer {
     width: 35vw;
     aspect-ratio: 16/9;
     border-radius: 8px;
-    box-shadow: 8px 8px 16px #4A314D88;
+    box-shadow: 8px 8px 16px grey;
 }
 
 .formulario {
     width: 100%;
+}
+
+.campo1, .campo2, .campo3 {
+    margin-bottom: 1rem;
 }
 
 input, textarea, button {
@@ -149,7 +152,7 @@ input, textarea, button {
 }
 
 input, textarea {
-    border: 1px solid darkolivegreen;
+    border: 1px solid gray;
 }
 
 button {
@@ -158,6 +161,6 @@ button {
 }
 
 button:hover {
-    background-color: darkolivegreen;
+    background-color: gray;
     color: #FFFFFF;
 }
