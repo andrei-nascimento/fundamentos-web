@@ -23,20 +23,23 @@
             <form>
                 <div class="campo1">
                     <label for="nome">Nome:</label>
-                    <input type="text" placeholder="Insira seu nome completo">
+                    <input type="text" placeholder="Insira seu nome completo" id="nome" onkeyup="validaNome()" required>
+                    <div id="txtNome"></div>
                 </div>
                 
                 <div class="campo2">
                     <label for="email">E-mail:</label>
-                    <input type="text" placeholder="Insira seu e-mail">
+                    <input type="email" placeholder="Insira seu e-mail" id="email" onkeyup="validaEmail()" required>
+                    <div id="txtEmail"></div>
                 </div>
                 
                 <div class="campo3">
                     <label for="mensagem">Mensagem:</label>
-                    <textarea rows="8" cols="45" placeholder="Deixe sua mensagem para mim"></textarea>
+                    <textarea rows="8" cols="45" placeholder="Deixe sua mensagem para mim" id="mensagem" onkeyup="validaMensagem()"></textarea>
+                    <div id="txtMensagem"></div>
                 </div>
                 
-                <button type="submit">Enviar</button>
+                <button onclick="enviar()" type="submit">Enviar</button>
             </form>
         </section>
 
@@ -45,11 +48,13 @@
             <p>Servidão da Prainha, 300</p>
             <p>Florianópolis - SC - Brasil</p>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.606440615965!2d-48.4227442851318!3d-27.574722182847044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273e47a5bc3297%3A0xb69a3161fa332d14!2sServid%C3%A3o%20da%20Prainha%2C%20300%20-%20Barra%20da%20Lagoa%2C%20Florian%C3%B3polis%20-%20SC%2C%2088061-240!5e0!3m2!1spt-BR!2sbr!4v1663877546925!5m2!1spt-BR!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.606440615965!2d-48.4227442851318!3d-27.574722182847044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273e47a5bc3297%3A0xb69a3161fa332d14!2sServid%C3%A3o%20da%20Prainha%2C%20300%20-%20Barra%20da%20Lagoa%2C%20Florian%C3%B3polis%20-%20SC%2C%2088061-240!5e0!3m2!1spt-BR!2sbr!4v1663877546925!5m2!1spt-BR!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
         </section>
     </main>
     <footer>
         <p>Feito por: Andrei Nascimento - 2022 &copy;</p>
     </footer>
+
+    <script src="assets/scripts/script.js"></script>
 </body>
 </html>
